@@ -19,7 +19,14 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      
+      $("snake-pic").hide();
+      $("#snake-text").hide();
+      $("#snake-pic").slideDown(1000, function(){
+         $("snake-text").fadeIn();
+      });
+     
+
+
       var $pic = $("#snake-pic");
       var $h1 = $("#snake-h1");
 
